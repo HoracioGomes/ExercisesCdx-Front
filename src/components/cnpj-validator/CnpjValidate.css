@@ -1,0 +1,21 @@
+#cnpjBody {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+  }
+  
+  .check_btn {
+    background-color: aquamarine;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 1px solid transparent;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  
+  .check_btn:hover {
+    border-color: #0cb15c;
+  }
