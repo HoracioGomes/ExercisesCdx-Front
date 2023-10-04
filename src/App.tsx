@@ -5,7 +5,7 @@ import Header from './components/header/Header'
 import Menu from './components/menu/Menu'
 import Home from './components/home/Home'
 import ExerciseB from './components/exercises/exerciseB/ExerciseB'
-import CnpjValidator from './components/cnpj-validator/CnpjValidate'
+import CnpjValidator from './components/exercises/cnpj-validator/CnpjValidate'
 
 
 function App() {
