@@ -1,12 +1,9 @@
-#root {
-  max-width: 1280px;
-  width: 1280px;
-  height: 50vh;
-  margin: 0 auto;
-  border-radius: 50px;
-  padding: 2rem;
-  text-align: center;
-  background-color: rgb(195, 195, 195);
+body {
+  background-color: #d7d7d7;
+  margin: 0;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 input {
