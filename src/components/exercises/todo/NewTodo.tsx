@@ -30,20 +30,15 @@ function NewTodo() {
     }
 
     return (
+        
         <div className="new-todo-container">
-            <div className="content">
-                <section className="form">
-                    <h1>Add New Todo</h1>
-                    <Link className="btn-back-list" to="/todo">
-                        <FiArrowLeft className="icon-confirm-todo" size={16} color="251FC5"></FiArrowLeft></Link>
-                </section>
-                <form>
-                    <input value={titulo} onChange={e => setTitulo(e.target.value)} placeholder="Title" />
-                    <input value={descricao} onChange={e => setDescricao(e.target.value)} placeholder="Description" />
-                    <input value={date} onChange={e => setDate(e.target.value)} type="date" placeholder="Date" />
-                    <button onClick={createTodo} className="button-submit-todo" type="submit">Add</button>
-                </form>
-            </div>
+            <h1>Add New Todo</h1>
+            <form className="form-todo">
+                <input value={titulo} onChange={e => setTitulo(e.target.value)} placeholder="Title" />
+                <textarea value={descricao} onChange={e => setDescricao(e.target.value)} placeholder="Description" />
+                <input value={date} onChange={e => setDate(e.target.value)} type="date" placeholder="Date" />
+                <button onClick={createTodo} className="button-submit-todo" type="submit">Add</button>
+            </form>
         </div>
     )
 }
