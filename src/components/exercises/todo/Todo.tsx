@@ -42,7 +42,7 @@ function ExerciseB() {
                     const dataSemZ = dataCorrigida.replace('Z', '');
 
                     return (
-                        <li>
+                        <li key={todo.id}>
                             <strong>Title:</strong>
                             <p>{todo.titulo}</p>
                             <strong>Date:</strong>
