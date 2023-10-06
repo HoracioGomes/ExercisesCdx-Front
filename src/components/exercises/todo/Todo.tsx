@@ -21,7 +21,7 @@ function ExerciseB() {
 
     async function deleteTodo(id) {
         try {
-            await api.delete(`todo/delete/${id}`)
+            await remote.api.delete(`todo/delete/${id}`)
             todos.filter(todo => todo.id !== id)
         } catch (error) {
             alert('error when deleting')
