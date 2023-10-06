@@ -6,7 +6,8 @@ function Menu() {
         <div className="menu-container">
             <a href="/">Home</a>&nbsp;&nbsp;&nbsp;
             <a href="/cnpj-validator">CNPJ Validator</a>&nbsp;&nbsp;&nbsp;
-            <a href="/todo">Todo</a>
+            <a href="/todo">Todo</a>&nbsp;&nbsp;&nbsp;
+            <a href="/utc">UTC</a>
         </div>
     )
 }

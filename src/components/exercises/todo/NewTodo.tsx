@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import "./Todo.css"
 import { Link, useNavigate } from "react-router-dom"
 import { FiArrowLeft } from "react-icons/fi"
-import api from "../../../services/api";
+import remote from "../../../services/api";
 
 function NewTodo() {
     const [titulo, setTitulo] = useState('')
@@ -21,7 +21,7 @@ function NewTodo() {
 
         try {
             console.log(data);
-            const response = await api.post('todo', data)
+            const response = await remote.api.post('todo', data)
             console.log(response);
             nav('/todo')
         } catch (error) {

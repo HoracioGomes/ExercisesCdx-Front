@@ -4,4 +4,8 @@ const api = axios.create({
     baseURL: 'http://localhost:8080',
 });
 
-export default api;
+const apiUtc = axios.create({
+    baseURL: 'http://worldclockapi.com/api/json/utc/now',
+});
+
+export default {api, apiUtc};

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import "./Todo.css"
 import { Link, useNavigate } from "react-router-dom"
 import { FiPlus, FiTrash2, FiCheck } from "react-icons/fi"
-import api from "../../../services/api";
+import remote from "../../../services/api";
 import { format } from 'date-fns'
 
 
@@ -11,7 +11,8 @@ function ExerciseB() {
     const [todos, setTodos] = useState([])
 
     useEffect(() => {
-        api.get('todo').then(
+        
+        remote.api.get('todo').then(
             response => {
                 setTodos(response.data)
             }
