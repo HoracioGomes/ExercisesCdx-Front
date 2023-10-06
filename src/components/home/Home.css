@@ -1,0 +1,12 @@
+.home-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+p.completed{
+    color: rgb(134, 179, 67);
+}
+p.not-completed{
+    color: rgb(229, 84, 36);
+}
